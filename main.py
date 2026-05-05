@@ -191,7 +191,19 @@ class Game:
             self.current = "O" if self.current == "X" else "X"
 
                     
+def Instruct():
+    print("Welcome to Tic-Tac-Toe!")
+    print("Players take turns entering a number (1-9) to place their symbol (X or O).")
+    print("The board positions are as follows:")
+    print(" 1 | 2 | 3 ")
+    print("-----------")
+    print(" 4 | 5 | 6 ")
+    print("-----------")
+    print(" 7 | 8 | 9 ")
+    print("Let the game begin!\n")
+
 def main():
+    Instruct()
     game = Game()
 
     while True:
